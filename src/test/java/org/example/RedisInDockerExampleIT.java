@@ -16,7 +16,7 @@ public class RedisInDockerExampleIT {
     private RedisBackedCache underTest;
 
     @Container
-    public GenericContainer redis = new GenericContainer(DockerImageName.parse("redis:5.0.3-alpine"))
+    public GenericContainer redis = new GenericContainer(DockerImageName.parse("redis:latest"))
             .withExposedPorts(6379);
 
     @BeforeEach
